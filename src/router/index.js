@@ -1,23 +1,36 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
+ 
+  
+  
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'TopPage',
+    // route level code-splitting
+    // this generates a separate chunk (Top.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Top" */ '../views/TopPage.vue')
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/',
+    name: 'TopCarousel',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (TopCarousel.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/TopCarousel.vue')
+  },
+  // {
+  //   path: '/topslide',
+  //   name: 'Topslide',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (Topslide.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "Topslide" */ '../views/Topslide.vue')
+  // },
 ]
 
 const router = new VueRouter({
