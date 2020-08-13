@@ -8,29 +8,39 @@ Vue.use(VueRouter)
   
   
   {
-    path: '/',
+    path: '/toppage',
     name: 'TopPage',
     // route level code-splitting
     // this generates a separate chunk (Top.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Top" */ '../views/TopPage.vue')
   },
+
   {
-    path: '/',
-    name: 'TopCarousel',
+    path: '/postlist',
+    name: 'PostList',
     // route level code-splitting
     // this generates a separate chunk (TopCarousel.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/TopCarousel.vue')
+    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/PostList.vue')
   },
-  // {
-  //   path: '/topslide',
-  //   name: 'Topslide',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (Topslide.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "Topslide" */ '../views/Topslide.vue')
-  // },
+  {
+    path: '/mypage',
+    name: 'Mypage',
+    // route level code-splitting
+    // this generates a separate chunk (TopCarousel.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/Mypage.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    // route level code-splitting
+    // this generates a separate chunk (TopCarousel.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/Login.vue')
+  },
+  
 ]
 
 const router = new VueRouter({

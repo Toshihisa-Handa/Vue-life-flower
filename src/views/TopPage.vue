@@ -5,6 +5,7 @@
       <TopForm/>
       <IndexForm/>
       <TopSlideForm/>
+      <IndexForm/>
       </v-col>
     </v-row>
   </v-container>

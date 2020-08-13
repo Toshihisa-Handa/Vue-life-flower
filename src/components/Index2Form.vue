@@ -4,7 +4,7 @@
         <v-col class='feature'>
         <h3>本サイトについて</h3>
         <span>FEATURE</span>
-        <div>外出自粛が広く実施される昨今<br>
+        <div>外出自粛にが広く実施される昨今<br>
         「Life Flower」は、改めて家庭で花を楽しむ体験を提案します<br>
         皆さんの生活に彩りを添える花を１輪飾ってみませんか。<br>
         あなたの街の素敵なお花屋さんと花々を楽しむ体験を<br>
@@ -22,9 +22,3 @@
         text-align: center;
     }
 </style>
-
-<script>
-export default {
-  
-}
-</script>

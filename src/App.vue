@@ -8,7 +8,7 @@
    <Footer/>
   </v-app>
 </template>
-<style >
+<style scoped>
   v-container{
     padding-bottom: 0;
   }

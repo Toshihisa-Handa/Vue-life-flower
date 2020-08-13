@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div fixed-header height="300px">
     <v-app-bar
       color="white"
       dense
@@ -10,7 +10,19 @@
       <h3>Life Flower</h3>
       <v-spacer></v-spacer>
 
-     <router-link active-class="current " v-bind:to="{ name: 'Form'}">
+     <router-link active-class="current " v-bind:to="{ name: 'TopPage'}">
+      <v-btn icon>
+        <v-icon class=''>mdi-home</v-icon>
+      </v-btn>
+     </router-link>
+
+     <router-link active-class="current " v-bind:to="{ name: 'Mypage'}">
+      <v-btn icon>
+        <v-icon class=''>mdi-storefront-outline</v-icon>
+      </v-btn>
+     </router-link>
+
+     <router-link active-class="current " v-bind:to="{ name: 'PostList'}">
       <v-btn icon>
         <v-icon class=''>mdi-file-document-outline</v-icon>
       </v-btn>
@@ -27,10 +39,16 @@
   
 </template>
 
-<style>
+<style scoped>
 
 h3{
   color:black;
 }
 
+a {
+  text-decoration: none;
+}
+.current .v-btn--icon .v-icon {
+  color: #d583b4;
+}
 </style>

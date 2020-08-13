@@ -7,7 +7,7 @@
     </v-row>
   </v-container >
 </template>
-<style>
+<style scoped>
   .header-container{
     padding-bottom:0;
   }

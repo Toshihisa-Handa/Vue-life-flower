@@ -28,9 +28,6 @@
   </v-footer>
 </template>
 
-<style>
-
-</style>
 
 
 <script>
